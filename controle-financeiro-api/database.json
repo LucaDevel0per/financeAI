@@ -1,0 +1,12 @@
+{
+  "transactions": [
+    {
+      "id": "fa4b9faf-3906-4886-8be9-19285c90b376",
+      "date": "2025-10-16",
+      "description": "Gasolina do Celta",
+      "category": "Transporte",
+      "amount": -150,
+      "type": "expense"
+    }
+  ]
+}

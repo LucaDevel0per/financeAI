@@ -1,17 +1,15 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import cors from 'cors';
+import transactionRoutes from './routes/transaction.routes'; 
 
 const app = express();
-
 const PORT: number = 5000;
 
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req: Request, res: Response) => {
-    res.send("API Rodando!");
-});
+app.use('/api', transactionRoutes);
 
 app.listen(PORT, () => {
-    console.log(`rodando em > http://localhost:${PORT}`)
-})
+  console.log(`Servidor refatorado rodando na porta http://localhost:${PORT}`);
+});
