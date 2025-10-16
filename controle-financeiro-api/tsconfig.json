@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2016",      // Versão do JS que o código vai ser compilado
+    "module": "commonjs",     // Sistema de módulos que o Node usa
+    "rootDir": "./src",       // Onde tá nosso código TS
+    "outDir": "./dist",       // Onde ele vai cuspir o código JS compilado
+    "esModuleInterop": true,  // Ajuda na compatibilidade entre módulos
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,           // Liga um monte de regras pra te impedir de fazer merda
+    "skipLibCheck": true
+  }
+}
